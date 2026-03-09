@@ -9,90 +9,106 @@ CCLaboratories Biodiversity Atlas
 <html>
 
 <head>
-    <title>반딧불이에요</title>
+    <title>Cosmic Fireflies</title>
 
-    <!-- allow special characters, including Arabic, Chinese, Korean, Japanese, etc. -->
     <meta charset="UTF-8">
-    <!-- link the style sheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- import p5.js library -->
+
     <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
     <script>
-        // prevent scrolling when spacebar and arrow keys are pressed.
-        window.addEventListener("keydown", function (e) { if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) { e.preventDefault(); } }, false);
+        window.addEventListener("keydown", function (e) {
+            if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+                e.preventDefault();
+            }
+        }, false);
     </script>
 </head>
 
 <body>
     <!-- title -->
     <div id="title-wrapper">
-        <h1 class="headline black">반딧불이에요</h1>
+        <h1 class="headline black">Cosmic Fireflies</h1>
     </div>
 
     <!-- main content -->
     <div id="main-wrapper">
         <div id="p5-canvas-container">
-            <!-- This is where your p5 sketch will be appended and appear! -->
+            <!-- p5 sketch goes here -->
         </div>
+
         <div class="two-columns">
             <div class="left">
                 <h3 class="red">Scientific Name:</h3>
-                <p>NAME OF YOUR CREATURE</p>
+                <p>Luminis Noctis</p>
 
                 <h3 class="red">Discovered by / at:</h3>
-                <p>Scientist's Name, Time of discovery</p>
+                <p>Hyounsuk Ock, New York University Shanghai, 2026</p>
 
                 <h3 class="green">Family:</h3>
-                <p>This is part of the story telling of your project. Add the relevant information for the creature you
-                    discovered.</p>
+                <p>
+                    This creature belongs to a fictional family of night insects that glow softly in dark grass fields.
+                    They are shy, sensitive to movement, and often hide close to the ground before rising into the air.
+                </p>
             </div>
+
             <div class="right">
                 <h3 class="green">Habitat:</h3>
-                <p>Feel free to modify/add information as you want.</p>
+                <p>
+                    Luminis Noctis lives in quiet meadows under deep blue night skies. It prefers places with tall
+                    grass,
+                    moving shadows, and a few distant stars.
+                </p>
 
                 <h3 class="green">Appearance:</h3>
-                <p>This text is part of the story telling of your project. You created this creature then you can give
-                    all the information about it.</p>
+                <p>
+                    These fireflies have a soft yellow-green glow. From far away, they look like floating lights, but up
+                    close they react to movement and quickly drift away from danger before slowly returning to rest.
+                </p>
 
                 <h3 class="green">Key Characteristics:</h3>
                 <ul>
-                    <li>Flies in the dark.</li>
-                    <li>Eats metal.</li>
-                    <li>(keep them short!)</li>
-                    <li>...</li>
+                    <li>Glows in the dark.</li>
+                    <li>Rests in the grass.</li>
+                    <li>Flies away when disturbed.</li>
+                    <li>Returns after a short time.</li>
                 </ul>
             </div>
         </div>
+
         <div class="one-column">
             <p>
-                <span class="yellow">What we know so far about [ NAME OF YOUR CREATURE ]?</span>
-                The giraffe is a large African hoofed mammal belonging to the genus Giraffa. It is the tallest living
-                terrestrial animal and the largest ruminant on Earth. Traditionally, giraffes have been thought of as
-                one species, Giraffa camelopardalis, with nine subspecies. Most recently, researchers proposed dividing
-                them into up to eight extant species due to new research into their mitochondrial and nuclear DNA, as
-                well as morphological measurements. Seven other extinct species of Giraffa are known from the fossil
-                record. (This is from Wikipedia, write the story, history, facts, tales, myths, anecdotes about your
-                creature.)
-                <br>
-                <span class="yellow">Guidelines for human interaction with this creature</span> This text can double as
-                fictional part of your story, but could also include instructional aspects on how to interact with your
-                sketch above.
+                <span class="yellow">What we know so far about Luminis Noctis?</span>
+                Luminis Noctis is a fictional generative creature inspired by fireflies at night. In this project, the
+                creature begins quietly in the grass and reacts when the viewer approaches. The movement of the grass
+                can
+                disturb the fireflies, causing them to rise, drift, and glow in the air before settling back down. This
+                behavior is meant to create a small interactive ecosystem rather than a single moving object.
+                <br><br>
+                The project focuses on atmosphere, repetition, and gentle interaction. The dark gradient sky, stars, and
+                meteor help build a calm nighttime environment, while the fireflies add life and motion. Instead of
+                acting
+                in exactly the same way, each firefly has its own timing and position, which makes the scene feel more
+                alive.
+                <br><br>
+                <span class="yellow">Guidelines for human interaction with this creature</span>
+                Move your mouse near the grass to disturb the environment. Fireflies resting nearby will react, fly away
+                for a while, and then slowly return to their original place. If you move the mouse directly toward them,
+                their glow fades and they try to avoid you.
             </p>
         </div>
     </div>
 
     <!-- Footer -->
     <div id="footer" class="black">
-        <p>A CCLab project made by [Your Name] in [Current Semester]</p>
+        <p>Project Alpha made by Hyounsuk Ock in Spring 2026</p>
     </div>
 
-    <!-- Home: Link back to the ATLAS page-->
+    <!-- Home -->
     <div id="home">
         <a href="https://cclab.work/atlas">Back to the ATLAS</a>
     </div>
 
-    <!-- Include your sketch.js file here -->
-    <script src="sketch.js" type="text/javascript"> </script>
+    <script src="sketch.js" type="text/javascript"></script>
 </body>
 
 </html>
